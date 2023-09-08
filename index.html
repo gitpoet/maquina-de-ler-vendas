@@ -24,13 +24,21 @@
   </header>
 
   <main class="flex flex-col items-center ">
-    <section id="filtros" class="p-10">
-      <input id="exibir-todos" type="radio" />
-      <label for="exibir-todos">Todos</label>
-      <input id="exibir-ensaio" type="radio" />
-      <label for="exibir-ensaio">Ensaio</label>
-      <input id="exibir-poesia" type="radio" />
-      <label for="exibir-poesi">Poesia</label>
+    <section id="filtros" class="p-10 flex gap-10">
+      <div class="">
+        <input id="exibir-todos" type="radio" name="filtro" class="peer hidden" checked />
+        <label for="exibir-todos" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Todos</label>
+      </div>
+      <div>
+        <input id="exibir-ensaio" type="radio" name="filtro" class="peer hidden" />
+        <label for="exibir-ensaio" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Ensaio</label>
+      </div>
+      <div>
+        <input id="exibir-poesia" type="radio" name="filtro" class="peer hidden" />
+        <label for="exibir-poesia" class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Poesia</label>
+      </div>
+
+
     </section>
     <section id="container-produto" class="flex flex-wrap justify-center gap-10"></section>
   </main>
