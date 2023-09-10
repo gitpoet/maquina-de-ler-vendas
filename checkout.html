@@ -12,53 +12,95 @@
 <body class="bg-stone-200 flex flex-col h-screen">
 
   <header class=" flex bg-orange-300 px-8 py-4 justify-between sticky top-0 z-10">
-    <img class='h-16' src="./assets/img/Logo-Máquina-de-Ler-Isolada-png.png" alt=" logo máquina de ler">
+    <a href="./">
+      <img class='h-12' src="./assets/img/Logo-Máquina-de-Ler-Isolada-png.png" alt=" logo máquina de ler">
+    </a>
+
 
   </header>
 
   <form class="flex w-100 px-5 gap-4 py-10 grow">
 
-    <section id="dados-usuario" class="w-1/3 bg-slate-300 rounded-lg py-5">
+    <section id="dados-usuario" class="w-1/3 bg-orange-200 rounded-lg py-5">
       <p class="mb-5 text-center font-bold">Seus Dados</p>
-      <div class="flex flex-col px-10 py-3">
+      <div class="flex flex-col px-10 py-5">
         <label for="nome" class="font-bold text-sm mb-2">Nome</label>
-        <input type="text" id="nome" class="rounded-sm px-2 border-2 border-slate-200" placeholder="Carlos Dantas" required>
+        <input type="text" id="nome" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="Carlos Dantas" required>
       </div>
 
       <div class="flex flex-col px-10 py-3">
-        <label for="email" class="font-bold text-sm mb-2">Email</label>
-        <input type="email" id="email" class="rounded-sm px-2 border-2 border-slate-200" placeholder="carlos.dantas@maquina.com" required>
+        <label for="email" class="font-bold text-sm mb-2">E-mail</label>
+        <input type="email" id="email" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="carlos.dantas@maquina.com" required>
+
+
       </div>
 
       <div class="flex flex-col px-10 py-3">
         <label for="tel" class="font-bold text-sm mb-2">Telefone de Contato</label>
-        <input type="tel" id="tel" class="rounded-sm px-2 border-2 border-slate-200" placeholder="(00) 999776655" required>
+        <input type="tel" id="tel" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="(00) 999776655" required>
       </div>
 
     </section>
 
-    <section id="dados-pagamento" class="w-1/3">
+    <section id="pagamento-entrega" class="w-1/3 bg-orange-200 rounded-lg py-5">
       <p class="mb-5 text-center font-bold">Pagamento e Entrega</p>
-      <div class="flex flex-col px-10 py-3">
-        <label for="nome" class="font-bold text-sm mb-2">Código Pix</label>
-        <input type="text" id="nome" class="rounded-sm px-2 border-2 border-slate-200" placeholder="Carlos Dantas" required>
+      <div class="flex flex-col px-10 py-5">
+        <label for="numero-cartao" class="font-bold text-sm mb-2">Número do cartão</label>
+        <input type="text" id="numero-cartao" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="1111 2222 3333 4444" required>
       </div>
 
-      <div class="flex flex-col px-10 py-3">
-        <label for="email" class="font-bold text-sm mb-2">Email</label>
-        <input type="email" id="email" class="rounded-sm px-2 border-2 border-slate-200" placeholder="carlos.dantas@maquina.com" required>
+      <div class="flex">
+        <div class="flex flex-col px-10 py-3 w-1/2">
+          <label for="cvv-cartao" class="font-bold text-sm mb-2">CVV</label>
+          <input type="number" id="cvv-cartao" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="123" required>
+        </div>
+        <div class="flex flex-col px-10 py-3 w-1/2">
+          <label for="data-expiracao" class="font-bold text-sm mb-2">Validade</label>
+          <input type="text" id=" data-expiracao" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="10/10" required>
+        </div>
       </div>
 
-      <div class="flex flex-col px-10 py-3">
-        <label for="tel" class="font-bold text-sm mb-2">Telefone de Contato</label>
-        <input type="tel" id="tel" class="rounded-sm px-2 border-2 border-slate-200" placeholder="00 999776655" required>
+      <div class="flex flex-col px-10 py-5">
+        <label for="endereco" class="font-bold text-sm mb-2">Endereço</label>
+        <input type="text" id="endereco" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="Rua das Flores" required>
       </div>
+      <div class="flex">
+        <div class="flex flex-col px-10 py-3 w-1/2">
+          <label for="numero" class="font-bold text-sm mb-2">Número</label>
+          <input type="number" id="numero" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="000" required>
+        </div>
+        <div class="flex flex-col px-10 py-3 w-1/2">
+          <label for="complemento" class="font-bold text-sm mb-2">Complemento</label>
+          <input type="text" id="complemento" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="Casa 1">
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex flex-col px-10 py-3 w-1/2">
+          <label for="cep" class="font-bold text-sm mb-2">CEP</label>
+          <input type="number" id="cep" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="11222-333" required>
+        </div>
+        <div class="flex flex-col px-10 py-3 w-1/2">
+          <label for="estado" class="font-bold text-sm mb-2">Estado</label>
+          <input type="text" id=" estado" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="Ceará">
+
+        </div>
+      </div>
+
     </section>
 
-    <section id="produtos-checkout" class="w-1/3">
+    <section id="produtos-checkout" class="w-1/3 bg-orange-200 rounded-lg py-5">
+      <section id="container-produtos-checkout" class="h-4/5 overflow-y-auto px-2"></section>
 
+      <section id="celula-checkout" class="flex flex-col px-2 h-1/5 justify-around">
+        <p id="preco-total" class="bg-slate-200 text-green-800 rounded-lg pl-5"> Total: R$ 200,00
+
+        </p>
+        <button class="bg-slate-900 text-slate-200 p-1 hover:text-slate-200 hover:bg-slate-900" type="submit">Finalizar Compra</button>
+      </section>
     </section>
   </form>
+
+  <script src="./checkout.js" type="module"></script>
 </body>
 
 </html>

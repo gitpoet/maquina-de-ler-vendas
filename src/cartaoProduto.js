@@ -5,7 +5,7 @@ export function renderizarCatalogo() {
   for (const produtoCatalogo of catalogo) {
     const cartaoProduto = `<div class='border-solid w-48 m-2 p-2 flex flex-col shadow-xl shadow-slate-700 group rounded-lg ${
       produtoCatalogo.ensaio ? "ensaio" : "poesia"
-    } ' id="card-produto-${produtoCatalogo.id}">
+    }'  id="card-produto-${produtoCatalogo.id}">
     <img
       src="./assets/img/${produtoCatalogo.imagemLivro}"
       alt="Capa do livro História da literatura de cordel - período de formação"
